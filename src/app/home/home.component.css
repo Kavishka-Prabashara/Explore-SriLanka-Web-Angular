@@ -1,0 +1,18 @@
+/* home.component.scss */
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+.nav-link {
+  @apply text-white hover:text-gray-300 transition duration-300;
+}
+
+.home-bg {
+  background-image: url('https://static01.nyt.com/images/2019/02/03/travel/03frugal-srilanka01/merlin_148552275_74c0d250-949c-46e0-b8a1-e6d499e992cf-superJumbo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  @apply transition duration-500 ease-in-out;
+}
+
+.home-bg:hover {
+  filter: brightness(0.8);
+}
