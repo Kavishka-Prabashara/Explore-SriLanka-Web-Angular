@@ -12,13 +12,41 @@ html {
   margin: 0/* Full viewport height */
 }
 
-.centered-contentLK {
-  /* Add any additional styling here */
+.containerLK path {
+  fill: #6f9c76; /* Default fill color */
+  stroke: #ffffff; /* Stroke color */
+  stroke-width: 1px; /* Stroke width */
+  transition: fill 0.3s ease; /* Smooth transition for color */
+  cursor: pointer; /* Cursor changes to pointer to indicate interactivity */
+}
+
+/* Zoom-in animation */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.containerLK path:active {
+  animation: pulse 0.5s ease-out; /* Pulsing animation on click */
+}
+
+.containerLK path:hover {
+  fill: #ff6347; /* Change fill color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow to match the zoom effect */
 }
 .nav-link {
   @apply text-white hover:text-gray-300 transition duration-300;
 }
-
+.image-gallery img {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  display: inline-block;
+}
 .home-bg {
   background-image: url('https://static01.nyt.com/images/2019/02/03/travel/03frugal-srilanka01/merlin_148552275_74c0d250-949c-46e0-b8a1-e6d499e992cf-superJumbo.jpg');
   background-size: cover;
@@ -30,3 +58,4 @@ html {
 .home-bg:hover {
   filter: brightness(0.8);
 }
+
