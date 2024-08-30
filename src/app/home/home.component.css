@@ -1,6 +1,20 @@
 /* home.component.scss */
 @import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
 
+html {
+  scroll-behavior: smooth;
+}
+.containerLK {
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;    /* Vertical center */
+  height: 100vh;
+  margin: 0/* Full viewport height */
+}
+
+.centered-contentLK {
+  /* Add any additional styling here */
+}
 .nav-link {
   @apply text-white hover:text-gray-300 transition duration-300;
 }
