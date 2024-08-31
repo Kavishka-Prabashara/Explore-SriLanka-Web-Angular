@@ -61,9 +61,11 @@ html {
 .image-gallery img {
   width: calc(80% - 10px); /* Adjust the width to account for horizontal margins */
   height: auto; /* Ensure the image maintains its aspect ratio */
-  margin: 5px; /* Add margin to all sides */
+  margin: 10px; /* Add margin to all sides */
   display: inline-block; /* Display images inline */
   box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+  animation: zoomInOut 1s ease forwards; /* Add zoom-in and zoom-out animation on load */
+  transition: transform 0.3s ease; /* Add a transition effect for smooth zoom on hover */
 }
 
 .home-bg {
@@ -74,7 +76,24 @@ html {
   @apply transition duration-500 ease-in-out;
 }
 
-.home-bg:hover {
-  filter: brightness(0.8);
+.image-gallery img:hover {
+  transform: scale(1.1); /* Zoom in the image slightly on hover */
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.8); /* Start slightly zoomed out */
+    opacity: 0; /* Start with the image invisible */
+  }
+  50% {
+    transform: scale(1.2); /* Slight zoom-in effect */
+    opacity: 1; /* Fade in the image */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+    opacity: 1; /* Fully visible */
+  }
 }
 
+.image-gallery img:hover {
+  transform: scale(1.1); /* Zoom in the image slightly on hover */
+}
