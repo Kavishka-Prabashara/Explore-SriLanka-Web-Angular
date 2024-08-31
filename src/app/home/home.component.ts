@@ -18,10 +18,10 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     const paths = document.querySelectorAll('#features path');
-    const gallery = document.querySelector('.image-gallery');
+    const galleries = document.querySelectorAll('.image-gallery'); // Get all galleries
 
-    if (!gallery) {
-      console.error('Gallery element not found!');
+    if (!galleries.length) {
+      console.error('Gallery elements not found!');
       return;
     }
 
@@ -29,9 +29,15 @@ export class HomeComponent implements AfterViewInit {
       'LK53': [
         'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
         'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
       ],
       'LK45': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
         'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
         'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
@@ -39,7 +45,10 @@ export class HomeComponent implements AfterViewInit {
       'LK41': [
         'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
-        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg'
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
       ]
     };
 
@@ -48,30 +57,36 @@ export class HomeComponent implements AfterViewInit {
         const id = path.id;
 
         if (images[id]) {
-          gallery.innerHTML = ''; // Clear previous images
-          images[id].forEach(src => {
-            const img = this.renderer.createElement('img');
-            this.renderer.setAttribute(img, 'src', src);
-            this.renderer.setStyle(img, 'display', 'block');
-            this.renderer.appendChild(gallery, img);
+          galleries.forEach(gallery => {
+            gallery.innerHTML = ''; // Clear previous images
+            images[id].forEach(src => {
+              const img = this.renderer.createElement('img');
+              this.renderer.setAttribute(img, 'src', src);
+              this.renderer.setStyle(img, 'display', 'block');
+              this.renderer.appendChild(gallery, img);
+            });
           });
         }
       });
 
       this.renderer.listen(path, 'mouseleave', () => {
-        gallery.innerHTML = ''; // Optionally clear images on mouse leave
+        galleries.forEach(gallery => {
+          gallery.innerHTML = ''; // Optionally clear images on mouse leave
+        });
       });
 
       this.renderer.listen(path, 'click', () => {
         const id = path.id;
 
         if (images[id]) {
-          gallery.innerHTML = ''; // Clear previous images
-          images[id].forEach(src => {
-            const img = this.renderer.createElement('img');
-            this.renderer.setAttribute(img, 'src', src);
-            this.renderer.setStyle(img, 'display', 'block');
-            this.renderer.appendChild(gallery, img);
+          galleries.forEach(gallery => {
+            gallery.innerHTML = ''; // Clear previous images
+            images[id].forEach(src => {
+              const img = this.renderer.createElement('img');
+              this.renderer.setAttribute(img, 'src', src);
+              this.renderer.setStyle(img, 'display', 'block');
+              this.renderer.appendChild(gallery, img);
+            });
           });
         }
       });
