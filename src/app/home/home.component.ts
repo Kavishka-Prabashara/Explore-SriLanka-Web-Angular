@@ -20,14 +20,14 @@ export class HomeComponent implements AfterViewInit {
     const paths = document.querySelectorAll('#features path');
     const galleries = document.querySelectorAll('.image-gallery'); // Get all galleries
 
-    if (!galleries.length) {
-      console.error('Gallery elements not found!');
+    if (galleries.length !== 2) {
+      console.error('Expected exactly 2 gallery elements!');
       return;
     }
 
     const images: ImageCollection = {
       'LK53': [
-        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
         'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
         'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
@@ -46,7 +46,7 @@ export class HomeComponent implements AfterViewInit {
         'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
         'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
-        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
         'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
       ]
@@ -57,14 +57,27 @@ export class HomeComponent implements AfterViewInit {
         const id = path.id;
 
         if (images[id]) {
-          galleries.forEach(gallery => {
-            gallery.innerHTML = ''; // Clear previous images
-            images[id].forEach(src => {
-              const img = this.renderer.createElement('img');
-              this.renderer.setAttribute(img, 'src', src);
-              this.renderer.setStyle(img, 'display', 'block');
-              this.renderer.appendChild(gallery, img);
-            });
+          // Split images array into two halves
+          const midIndex = Math.ceil(images[id].length / 2);
+          const firstHalf = images[id].slice(0, midIndex);
+          const secondHalf = images[id].slice(midIndex);
+
+          // Clear previous images from both galleries
+          galleries.forEach(gallery => gallery.innerHTML = '');
+
+          // Append first half to the first gallery and second half to the second gallery
+          firstHalf.forEach(src => {
+            const img = this.renderer.createElement('img');
+            this.renderer.setAttribute(img, 'src', src);
+
+            this.renderer.appendChild(galleries[0], img);
+          });
+
+          secondHalf.forEach(src => {
+            const img = this.renderer.createElement('img');
+            this.renderer.setAttribute(img, 'src', src);
+
+            this.renderer.appendChild(galleries[1], img);
           });
         }
       });
@@ -79,14 +92,25 @@ export class HomeComponent implements AfterViewInit {
         const id = path.id;
 
         if (images[id]) {
-          galleries.forEach(gallery => {
-            gallery.innerHTML = ''; // Clear previous images
-            images[id].forEach(src => {
-              const img = this.renderer.createElement('img');
-              this.renderer.setAttribute(img, 'src', src);
-              this.renderer.setStyle(img, 'display', 'block');
-              this.renderer.appendChild(gallery, img);
-            });
+          // Split images array into two halves
+          const midIndex = Math.ceil(images[id].length / 2);
+          const firstHalf = images[id].slice(0, midIndex);
+          const secondHalf = images[id].slice(midIndex);
+
+          // Clear previous images from both galleries
+          galleries.forEach(gallery => gallery.innerHTML = '');
+
+          // Append first half to the first gallery and second half to the second gallery
+          firstHalf.forEach(src => {
+            const img = this.renderer.createElement('img');
+            this.renderer.setAttribute(img, 'src', src);
+            this.renderer.appendChild(galleries[0], img);
+          });
+
+          secondHalf.forEach(src => {
+            const img = this.renderer.createElement('img');
+            this.renderer.setAttribute(img, 'src', src);
+            this.renderer.appendChild(galleries[1], img);
           });
         }
       });

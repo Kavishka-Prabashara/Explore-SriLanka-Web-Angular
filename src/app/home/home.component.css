@@ -8,7 +8,7 @@ html {
   display: flex;
   justify-content: center; /* Horizontal center */
   align-items: center;    /* Vertical center */
-  height: 100vh;
+  height: 100%;
   margin: 0/* Full viewport height */
 }
 
@@ -53,12 +53,19 @@ html {
 .nav-link {
   @apply text-white hover:text-gray-300 transition duration-300;
 }
-.image-gallery img {
-  width: 100%;
-  height: 30vh;
-  margin-bottom: 10px;
-  display: inline-block;
+.image-gallery {
+  width: 100%; /* Make the parent container full width */
+  text-align: center; /* Center the images within the parent container */
 }
+
+.image-gallery img {
+  width: calc(80% - 10px); /* Adjust the width to account for horizontal margins */
+  height: auto; /* Ensure the image maintains its aspect ratio */
+  margin: 5px; /* Add margin to all sides */
+  display: inline-block; /* Display images inline */
+  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
 .home-bg {
   background-image: url('https://static01.nyt.com/images/2019/02/03/travel/03frugal-srilanka01/merlin_148552275_74c0d250-949c-46e0-b8a1-e6d499e992cf-superJumbo.jpg');
   background-size: cover;
