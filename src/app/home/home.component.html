@@ -150,8 +150,11 @@
       </g>
     </svg>
     </div>
-    <div class="image-gallery"></div>
+
     </div>
+  <div class="image-gallery">
+    <img id="gallery-image" src="" alt="Gallery Image">
+  </div>
     <p class="text-lg text-center">Explore stunning images of Sri Lanka's landscapes and heritage sites.</p>
 
 
@@ -164,3 +167,51 @@
     <p class="text-lg text-center">Get in touch with us for more information.</p>
   </div>
 </section>
+<script>
+  const paths = document.querySelectorAll('#features path');
+  const gallery = document.querySelector('.image-gallery');
+
+  // Multiple Image URLs corresponding to each path
+  const images = {
+    'LK53': [
+      'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+      'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+      'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+    ],
+    'LK45': ['https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+      'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+      'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'],
+
+    'LK41': ['https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+      'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+      'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg']
+  };
+
+  paths.forEach(path => {
+    path.addEventListener('mouseenter', () => {
+      const id = path.id;
+      gallery.innerHTML = ''; // Clear previous images
+      images[id].forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.style.display = 'block';
+        gallery.appendChild(img);
+      });
+    });
+
+    path.addEventListener('mouseleave', () => {
+      gallery.innerHTML = ''; // Optionally clear images on mouse leave
+    });
+
+    path.addEventListener('click', () => {
+      const id = path.id;
+      gallery.innerHTML = ''; // Clear previous images
+      images[id].forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.style.display = 'block';
+        gallery.appendChild(img);
+      });
+    });
+  });
+</script>
