@@ -49,7 +49,184 @@ export class HomeComponent implements AfterViewInit {
         'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
         'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
         'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ] ,
+      'LK42': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK43': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK62': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK12': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK11': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK13': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK31': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK32': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK33': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK52': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK51': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK91': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK82': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK92': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK81': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK22': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK72': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK61': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK71': [
+        'https://www.japan.go.jp/kizuna/_src/7988231/202012_p04-05_03.jpg?v=1721638439767',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK23': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK44': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
+      ],
+      'LK21': [
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-20.jpg',
+        'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
+        'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
       ]
+
     };
 
     paths.forEach(path => {
