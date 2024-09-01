@@ -13,6 +13,35 @@ interface ImageCollection {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements AfterViewInit {
+  defaultBanner: string = 'assets/images/default_banner.jpg';
+  currentBanner: string = this.defaultBanner;
+
+  monthBanners: { [key: string]: string } = {
+    january: 'https://www.sundaytimes.lk/200119/uploads/DSCF4507.jpg',
+    february: 'assets/images/february_banner.jpg',
+    march: 'assets/images/march_banner.jpg',
+    april: 'assets/images/april_banner.jpg',
+    may: 'assets/images/may_banner.jpg',
+    june: 'assets/images/june_banner.jpg',
+    july: 'assets/images/july_banner.jpg',
+    august: 'assets/images/august_banner.jpg',
+    september: 'assets/images/september_banner.jpg',
+    october: 'assets/images/october_banner.jpg',
+    november: 'assets/images/november_banner.jpg',
+    december: 'assets/images/december_banner.jpg',
+  };
+
+  // Method to handle mouse enter event
+  onMouseEnter(month: string): void {
+    this.currentBanner = this.monthBanners[month] || this.defaultBanner;
+  }
+
+  // Method to handle mouse leave event
+  onMouseLeave(): void {
+    this.currentBanner = this.defaultBanner;
+  }
+
+
   logoPath: string = 'assets/images/your-logo.png';  // Path to your logo
   address: string = '123 Your Address, Your City, Your Country';
   telephone: string = '+123-456-7890';
