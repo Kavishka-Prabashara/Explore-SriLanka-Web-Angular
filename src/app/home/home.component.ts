@@ -13,7 +13,7 @@ interface ImageCollection {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements AfterViewInit {
-  defaultBanner: string = 'assets/images/default_banner.jpg';
+  defaultBanner: string = 'https://edwardscollection.com/media/pages/blog/kandy-perahera.webp?width=1345&height=450&rmode=crop&format=webp&token=4B27dQ7E4BK9a8LP9g33OrImdOhg75yULfAouDe9%2Bj4%3D';
   currentBanner: string = this.defaultBanner;
 
   monthBanners: { [key: string]: string } = {

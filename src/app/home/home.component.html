@@ -1,14 +1,15 @@
 <nav class="bg-gray-800 p-4 navbar-default">
   <div class="container mx-auto flex justify-between items-center">
     <a href="#" class="text-2xl font-bold text-white">Explore Sri Lanka</a>
-    <ul class="flex space-x-6">
-      <li><a routerLink="/" class="nav-link">Home</a></li>
-      <li><a routerLink="/about" class="nav-link">About</a></li>
-      <li><a routerLink="/gallery" class="nav-link">Gallery</a></li>
-      <li><a routerLink="/contact" class="nav-link">Contact</a></li>
+    <ul class="flex space-x-6 ml-auto pr-4">
+      <li><a routerLink="/" class="nav-link text-white">Home</a></li>
+      <li><a routerLink="/about" class="nav-link text-white">About</a></li>
+      <li><a routerLink="/gallery" class="nav-link text-white">Gallery</a></li>
+      <li><a routerLink="/contact" class="nav-link text-white">Contact</a></li>
     </ul>
   </div>
 </nav>
+
 
 <div class="home-bg flex items-center justify-center text-center">
   <div>
@@ -19,7 +20,7 @@
 </div>
 
 <!-- About Section -->
-<section id="about" class="py-20 bg-gray-900 text-white">
+<section id="about" class="py-20 text-black">
   <div class="container mx-auto">
     <h2 class="text-4xl font-bold text-center mb-8">About</h2>
     <p class="text-lg text-center mb-8">Learn more about Sri Lanka's rich history and culture.</p>
@@ -27,7 +28,7 @@
     <!-- Carousel Wrapper -->
     <div class="carousel">
       <!-- Carousel Items -->
-      <div class="carousel-track">
+      <div class="carousel-track text-white" >
         <div id="january" class="carousel-item"
              (mouseenter)="onMouseEnter('january')"
              (mouseleave)="onMouseLeave()">January</div>
@@ -78,7 +79,7 @@
 <!-- Gallery Section -->
 <section id="gallery" class="py-20 text-white">
   <div class="container mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-8">Gallery</h2>
+    <h2 class="text-4xl font-bold text-center mb-8 text-black">Gallery</h2>
 
     <div class="containerLK">
 
@@ -232,47 +233,56 @@
 <section
   id="contact"
   class="py-10 bg-cover bg-center text-black"
-
 >
-
-    <div class="container mx-auto px-20 sm:px-8 lg:px-8">
-      <h2 class="text-4xl font-bold text-center mb-8">Contact</h2>
-
-      <div class="flex flex-col md:flex-row justify-center items-center">
-        <div class="md:w-1/3 p-4">
-          <h3 class="text-2xl font-semibold mb-4">Our Address</h3>
-          <p class="text-lg">
-            Induruwa<br>
-            Bentota<br>
-            Galle, Sri Lanka
-          </p>
-        </div>
-
-        <div class="md:w-1/3 p-4">
-          <h3 class="text-2xl font-semibold mb-4">Email Us</h3>
-          <p class="text-lg">
-            kavishkaprabashara&#64;gmail.com
-          </p>
-        </div>
-
-        <div class="md:w-1/3 p-4">
-          <h3 class="text-2xl font-semibold mb-4">Call Us</h3>
-          <p class="text-lg">
-            071 599 74 63
-          </p>
-        </div>
-
-        <div class="social-media">
-          <h3 class="text-2xl font-semibold mb-4">Follow Us</h3>
-          <ul>
-            <li><a [href]="facebookLink" target="_blank">Facebook</a></li>
-            <li><a [href]="twitterLink" target="_blank">Twitter X</a></li>
-            <li><a [href]="instagramLink" target="_blank">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-lg text-center mb-6">Get in touch with us for more information.</p>
+  <div class="flex flex-col md:flex-row justify-between items-center md:items-start px-4 md:px-40">
+    <div class="md:w-1/3 p-4 text-left">
+      <h3 class="text-lg font-semibold mb-4">Our Address</h3>
+      <p class="text-sm">
+        Induruwa<br>
+        Bentota<br>
+        Galle, Sri Lanka
+      </p>
     </div>
+
+    <div class="md:w-1/3 p-4 text-center">
+      <h3 class="text-lg font-semibold mb-4">Email Us</h3>
+      <p class="text-sm">
+        kavishkaprabashara&#64;gmail.com
+      </p>
+    </div>
+
+    <div class="md:w-1/3 p-4 text-right">
+      <h3 class="text-lg font-semibold mb-4">Call Us</h3>
+      <p class="text-sm">
+        071 599 74 63
+      </p>
+    </div>
+  </div>
+
+  <p class="text-sm text-center mt-6">Get in touch with us for more information.</p>
+    <div class="social-media mt-4 md:mt-0 text-center">
+      <h3 class="text-lg font-semibold mb-4"><br>Follow Us</h3> <!-- Reduced from text-xl to text-lg -->
+      <div class="flex justify-center">
+        <ul class="flex space-x-4 text-center">
+          <li>
+            <a href="https://facebook.com" target="_blank" class="text-black text-sm text-center">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" class="text-black text-sm text-center">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" class="text-black text-sm text-center">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- Reduced from text-base to text-sm -->
 
 </section>
 

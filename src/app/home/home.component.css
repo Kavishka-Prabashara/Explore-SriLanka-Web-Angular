@@ -1,38 +1,57 @@
-/* home.component.scss */
 @import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
 
 html {
   scroll-behavior: smooth;
 }
+
 #about {
   height: 100vh;
   width: 100%;
 }
+
+#banner {
+  height: 100%;
+  width: 80%;
+  margin: 30px auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#banner img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .containerLK {
   display: flex;
-  justify-content: center; /* Horizontal center */
-  align-items: center;    /* Vertical center */
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  margin: 0/* Full viewport height */
+  margin: 0;
 }
 
 .containerLK path {
-  fill: #6f9c76; /* Default fill color */
-  stroke: #ffffff; /* Stroke color */
-  stroke-width: 1px; /* Stroke width */
-  transition: fill 0.3s ease; /* Smooth transition for color */
-  cursor: pointer; /* Cursor changes to pointer to indicate interactivity */
+  fill: #6f9c76;
+  stroke: #ffffff;
+  stroke-width: 1px;
+  transition: fill 0.3s ease;
+  cursor: pointer;
 }
 
-/* Zoom-in animation */
-@keyframes zoomIn {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.containerLK path:active {
+  animation: pulse 0.5s ease-out;
 }
+
+.containerLK path:hover {
+  fill: #ff6347;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
 .galleryGrid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -46,30 +65,43 @@ html {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.containerLK path:active {
-  animation: pulse 0.5s ease-out; /* Pulsing animation on click */
-}
 
-.containerLK path:hover {
-  fill: #ff6347; /* Change fill color on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow to match the zoom effect */
-}
 .nav-link {
   @apply text-white hover:text-gray-300 transition duration-300;
 }
+
 .image-gallery {
-  width: 100%; /* Make the parent container full width */
-  text-align: center; /* Center the images within the parent container */
+  width: 100%;
+  text-align: center;
 }
 
 .image-gallery img {
-  width: calc(80% - 10px); /* Adjust the width to account for horizontal margins */
-  height: auto; /* Ensure the image maintains its aspect ratio */
-  margin: 10px; /* Add margin to all sides */
-  display: inline-block; /* Display images inline */
-  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
-  animation: zoomInOut 1s ease forwards; /* Add zoom-in and zoom-out animation on load */
-  transition: transform 0.3s ease; /* Add a transition effect for smooth zoom on hover */
+  width: calc(80% - 10px);
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: zoomInOut 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .home-bg {
@@ -80,28 +112,6 @@ html {
   @apply transition duration-500 ease-in-out;
 }
 
-.image-gallery img:hover {
-  transform: scale(1.1); /* Zoom in the image slightly on hover */
-}
-@keyframes zoomInOut {
-  0% {
-    transform: scale(0.8); /* Start slightly zoomed out */
-    opacity: 0; /* Start with the image invisible */
-  }
-  50% {
-    transform: scale(1.2); /* Slight zoom-in effect */
-    opacity: 1; /* Fade in the image */
-  }
-  100% {
-    transform: scale(1); /* Return to original size */
-    opacity: 1; /* Fully visible */
-  }
-}
-
-.image-gallery img:hover {
-  transform: scale(1.1); /* Zoom in the image slightly on hover */
-}
-/* Ensure the nav bar sticks to the top */
 nav {
   position: sticky;
   top: 0;
@@ -109,33 +119,33 @@ nav {
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
-/* Default state (no scroll) */
 .navbar-default {
   background-color: black;
   padding: 20px 0;
 }
 
-/* Scrolled state */
 .navbar-scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background when scrolled */
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 0;
 }
+
 .carousel {
+  width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   display: flex;
   justify-content: center;
-  -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
-  scrollbar-width: none;     /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
 .carousel::-webkit-scrollbar {
-  display: none;  /* Hide scrollbar in Chrome, Safari, and Opera */
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
 }
 
 .carousel-track {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .carousel-item {
