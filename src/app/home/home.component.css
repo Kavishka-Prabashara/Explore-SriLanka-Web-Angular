@@ -116,3 +116,36 @@ nav {
   background-color: rgba(0, 0, 0, 0.8); /* Darker background when scrolled */
   padding: 10px 0;
 }
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 300px;
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+@media (min-width: 640px) {
+  .carousel-item {
+    flex: 0 0 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 30%;
+  }
+}
