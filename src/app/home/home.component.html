@@ -28,22 +28,52 @@
     <div class="carousel">
       <!-- Carousel Items -->
       <div class="carousel-track">
-        <div class="carousel-item">January</div>
-        <div class="carousel-item">February</div>
-        <div class="carousel-item">March</div>
-        <div class="carousel-item">April</div>
-        <div class="carousel-item">May</div>
-        <div class="carousel-item">June</div>
-        <div class="carousel-item">July</div>
-        <div class="carousel-item">August</div>
-        <div class="carousel-item">September</div>
-        <div class="carousel-item">October</div>
-        <div class="carousel-item">November</div>
-        <div class="carousel-item">December</div>
+        <div id="january" class="carousel-item"
+             (mouseenter)="onMouseEnter('january')"
+             (mouseleave)="onMouseLeave()">January</div>
+        <div id="february" class="carousel-item"
+             (mouseenter)="onMouseEnter('february')"
+             (mouseleave)="onMouseLeave()">February</div>
+        <div id="march" class="carousel-item"
+             (mouseenter)="onMouseEnter('march')"
+             (mouseleave)="onMouseLeave()">March</div>
+        <div id="april" class="carousel-item"
+             (mouseenter)="onMouseEnter('april')"
+             (mouseleave)="onMouseLeave()">April</div>
+        <div id="may" class="carousel-item"
+             (mouseenter)="onMouseEnter('may')"
+             (mouseleave)="onMouseLeave()">May</div>
+        <div id="june" class="carousel-item"
+             (mouseenter)="onMouseEnter('june')"
+             (mouseleave)="onMouseLeave()">June</div>
+        <div id="july" class="carousel-item"
+             (mouseenter)="onMouseEnter('july')"
+             (mouseleave)="onMouseLeave()">July</div>
+        <div id="august" class="carousel-item"
+             (mouseenter)="onMouseEnter('august')"
+             (mouseleave)="onMouseLeave()">August</div>
+        <div id="september" class="carousel-item"
+             (mouseenter)="onMouseEnter('september')"
+             (mouseleave)="onMouseLeave()">September</div>
+        <div id="october" class="carousel-item"
+             (mouseenter)="onMouseEnter('october')"
+             (mouseleave)="onMouseLeave()">October</div>
+        <div id="november" class="carousel-item"
+             (mouseenter)="onMouseEnter('november')"
+             (mouseleave)="onMouseLeave()">November</div>
+        <div id="december" class="carousel-item"
+             (mouseenter)="onMouseEnter('december')"
+             (mouseleave)="onMouseLeave()">December</div>
       </div>
+    </div>
+
+    <!-- Banner Image -->
+    <div id="banner" class="mt-10">
+      <img [src]="currentBanner" alt="Month Banner" id="month-banner" class="w-full h-64 object-cover">
     </div>
   </div>
 </section>
+
 
 <!-- Gallery Section -->
 <section id="gallery" class="py-20 text-white">
