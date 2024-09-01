@@ -1,4 +1,4 @@
-<nav class="bg-gray-800 p-4">
+<nav class="bg-gray-800 p-4 navbar-default">
   <div class="container mx-auto flex justify-between items-center">
     <a href="#" class="text-2xl font-bold text-white">Explore Sri Lanka</a>
     <ul class="flex space-x-6">
@@ -9,6 +9,7 @@
     </ul>
   </div>
 </nav>
+
 <div class="home-bg flex items-center justify-center text-center">
   <div>
     <h1 class="text-5xl font-bold text-indigo-50">Discover the Sri Lanka</h1>
@@ -178,57 +179,56 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-20 bg-gray-700 text-white">
-  <div class="container mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-8">Contact</h2>
-    <p class="text-lg text-center">Get in touch with us for more information.</p>
-  </div>
+
+<section
+  id="contact"
+  class="py-10 bg-cover bg-center text-black"
+
+>
+
+    <div class="container mx-auto px-20 sm:px-8 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-8">Contact</h2>
+
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <div class="md:w-1/3 p-4">
+          <h3 class="text-2xl font-semibold mb-4">Our Address</h3>
+          <p class="text-lg">
+            Induruwa<br>
+            Bentota<br>
+            Galle, Sri Lanka
+          </p>
+        </div>
+
+        <div class="md:w-1/3 p-4">
+          <h3 class="text-2xl font-semibold mb-4">Email Us</h3>
+          <p class="text-lg">
+            kavishkaprabashara&#64;gmail.com
+          </p>
+        </div>
+
+        <div class="md:w-1/3 p-4">
+          <h3 class="text-2xl font-semibold mb-4">Call Us</h3>
+          <p class="text-lg">
+            071 599 74 63
+          </p>
+        </div>
+
+        <div class="social-media">
+          <h3 class="text-2xl font-semibold mb-4">Follow Us</h3>
+          <ul>
+            <li><a [href]="facebookLink" target="_blank">Facebook</a></li>
+            <li><a [href]="twitterLink" target="_blank">Twitter X</a></li>
+            <li><a [href]="instagramLink" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-lg text-center mb-6">Get in touch with us for more information.</p>
+    </div>
+
 </section>
-<script>
-  const paths = document.querySelectorAll('#features path');
-  const gallery = document.querySelector('.image-gallery');
 
-  // Multiple Image URLs corresponding to each path
-  const images = {
-    'LK53': [
-      'https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
-      'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
-      'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'
-    ],
-    'LK45': ['https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
-      'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg',
-      'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg'],
-
-    'LK41': ['https://img.freepik.com/premium-photo/beautiful-white-sand-tropical-beack-with-blue-sea-sky_113629-204.jpg',
-      'https://bookingcolombo.com/wp-content/uploads/2023/01/jaffna-065.jpg',
-      'https://wowiwalkers.com/wp-content/uploads/2023/02/Header_Colombo_Sri-Lanka_Blog.jpg']
-  };
-
-  paths.forEach(path => {
-    path.addEventListener('mouseenter', () => {
-      const id = path.id;
-      gallery.innerHTML = ''; // Clear previous images
-      images[id].forEach(src => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.style.display = 'block';
-        gallery.appendChild(img);
-      });
-    });
-
-    path.addEventListener('mouseleave', () => {
-      gallery.innerHTML = ''; // Optionally clear images on mouse leave
-    });
-
-    path.addEventListener('click', () => {
-      const id = path.id;
-      gallery.innerHTML = ''; // Clear previous images
-      images[id].forEach(src => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.style.display = 'block';
-        gallery.appendChild(img);
-      });
-    });
-  });
-</script>
+<footer class="bg-black text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; Sri Lanka Explore Lanka. All Rights Reserved.</p>
+    </div>
+  </footer>
